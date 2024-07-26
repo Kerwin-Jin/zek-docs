@@ -9,6 +9,7 @@ import escookConfig from '@escook/vitepress-theme/config'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfigWithTheme({
+  base:'/zek-docs/',
   extends: escookConfig,
   title: "JinFei的小站",
   head:[
