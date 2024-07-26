@@ -9,10 +9,13 @@ jobs:
       uses: actions/checkout@v4
     - name: 打印工作区内容🖨️
       run: pwd
+    - name: 查看文件📃
       run: ls
-    - name: 安装依赖🔧
+    - name: 安装pnpm
       run: npm install pnpm -g
+    - name: 查看pnpm版本🎬
       run: pnpm --version
+    - name: 安装依赖🔧
       run: pnpm install
     - name: 开始构建🚗
       run: pnpm docs:build
