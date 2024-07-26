@@ -2,11 +2,17 @@ on: push
 
 jobs:
   pnpm-build:
+    name: pnpm-build工作
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
-    - run: pwd
-    - run: npm install pnpm -g
-    - run: pnpm --version
-    - run: pnpm install
-    - run: pnpm docs:build
+    - name: 读取仓库内容到编译服务器😧
+      uses: actions/checkout@v4
+    - name: 打印工作区内容🖨️
+      run: pwd
+      run: ls
+    - name: 安装依赖🔧
+      run: npm install pnpm -g
+      run: pnpm --version
+      run: pnpm install
+    - name: 开始构建🚗
+      run: pnpm docs:build
