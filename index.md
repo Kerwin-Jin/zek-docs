@@ -11,10 +11,10 @@ hero:
     alt: VitePress
   actions:
     - theme: brand
-      text: 我的B站
+      text: bilibili
       link: https://space.bilibili.com/671233314
     - theme: alt
-      text: API Examples
+      text: Examples
       link: /api-examples
 
 features:
