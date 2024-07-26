@@ -5,6 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - run: pwd
+    - run: npm install pnpm
     - run: pnpm --version
     - run: pnpm install
     - run: pnpm docs:build
