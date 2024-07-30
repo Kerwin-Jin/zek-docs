@@ -11,15 +11,15 @@ import escookConfig from '@escook/vitepress-theme/config'
 export default defineConfigWithTheme({
   base:'/zek-docs/',
   extends: escookConfig,
-  title: "JinFei的小站",
+  title: "JINFEI的文档小站",
   head:[
     ["link", {rel:"icon", href:"https://static.canva.cn/static/images/favicon-1.ico"}]
   ],
   description: "交个朋友，欢迎来逛",
   themeConfig: {
     nav: [
-      { text: '主页', link: '/' },
-      { text: '站点', link: '/markdown-examples' }
+      { text: '前端',items:[{text:'React', link:'/front-end/react'}, {text:'Vue', link:'/front-end/vue'} ]},
+      { text: '网络', items:[{text:'cors原理详解', link:'/network/cors'}] }
     ],
 
     sidebar: [
@@ -37,7 +37,7 @@ export default defineConfigWithTheme({
       { icon: 'github', link: 'https://github.com/Kerwin-Jin' }
     ],
     footer:{
-      copyright:'Copyright@ 2024 leo__liu'
+      copyright:'Copyright@ 2024 JINFEI'
     },
     logo:'https://static.canva.cn/static/images/favicon-1.ico',
     // 搜索框样式
